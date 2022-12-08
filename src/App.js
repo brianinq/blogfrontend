@@ -17,7 +17,7 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("https://blogapp-production-49a6.up.railway.app/blogs").then((res) => {
+    fetch("/blogs").then((res) => {
       if (res.ok) {
         res.json().then((data) => {
           setBlogs(data);
@@ -28,7 +28,7 @@ function App() {
 
   useEffect(() => {
     //get user details if logged in
-    fetch("https://blogapp-production-49a6.up.railway.app/profile", {
+    fetch("/profile", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -37,7 +37,7 @@ function App() {
         r.json().then((user) => setUser(user));
       }
     });
-    fetch("https://blogapp-production-49a6.up.railway.app/categories", {
+    fetch("/categories", {
       headers: {
         Authorization: `Bearer ${token}`,
       },

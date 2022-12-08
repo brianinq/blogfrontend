@@ -2,7 +2,7 @@
 
 An blog application crated using react and ruby on rails
 
-## [App Live Here](https://minido.herokuapp.com/)
+## [App Live Here](https://resilient-chebakia-ac8021.netlify.app)
 
 ## [Backend Live Here](https://blogapp-production-49a6.up.railway.app/blogs)
 
