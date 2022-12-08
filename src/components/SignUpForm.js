@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 import { Button, Error, Input, FormField, Label, Textarea } from "./index";
 
 function SignUpForm({ onLogin }) {
@@ -6,10 +7,11 @@ function SignUpForm({ onLogin }) {
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
-  const [imageUrl, setImageUrl] = useState("https://i.pravatar.cc/300");
+  const [imageUrl, setImageUrl] = useState("https://avataaars.io/");
   const [bio, setBio] = useState("");
   const [errors, setErrors] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -30,6 +32,7 @@ function SignUpForm({ onLogin }) {
       }),
     }).then((r) => {
       setIsLoading(false);
+      navigate("/create");
       if (r.ok) {
         r.json().then((data) => onLogin(data));
       } else {
@@ -82,7 +85,7 @@ function SignUpForm({ onLogin }) {
         <Button type="submit">{isLoading ? "Loading..." : "Sign Up"}</Button>
       </FormField>
       <FormField>
-        {errors.map((err) => (
+        {errors?.map((err) => (
           <Error key={err}>{err}</Error>
         ))}
       </FormField>
