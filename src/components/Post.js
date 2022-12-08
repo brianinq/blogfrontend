@@ -69,10 +69,10 @@ function Post({ user }) {
                 ? comments?.map((c) => (
                     <div key={c.id} className="content">
                       <div className="av">
-                        <img src={c.creator.avatar} alt={c.creator.name} />
+                        <img src={c.creator?.avatar} alt={c.creator?.name} />
                       </div>
                       <div>
-                        <p>By: {c.creator.username}</p>
+                        <p>By: {c.creator?.username}</p>
                         <p>{c.content}</p>
                       </div>
                     </div>
