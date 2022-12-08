@@ -17,7 +17,7 @@ function SignUpForm({ onLogin }) {
     e.preventDefault();
     setErrors([]);
     setIsLoading(true);
-    fetch("/users", {
+    fetch("https://blogapp-production-49a6.up.railway.app/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

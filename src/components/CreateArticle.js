@@ -45,7 +45,7 @@ Or just type out the content text.
   function handleSubmit(e) {
     e.preventDefault();
     setIsLoading(true);
-    fetch("/blogs", {
+    fetch("https://blogapp-production-49a6.up.railway.app/blogs", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

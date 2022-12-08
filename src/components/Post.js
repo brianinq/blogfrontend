@@ -14,7 +14,7 @@ function Post({ user }) {
   const navigate = useNavigate();
   let blogId = params["id"];
   useEffect(() => {
-    fetch(`/blogs/${blogId}`).then((r) => {
+    fetch(`https://blogapp-production-49a6.up.railway.app/blogs/${blogId}`).then((r) => {
       if (r.ok) {
         r.json().then((data) => {
           setPost(data);
