@@ -40,6 +40,7 @@ const Wrapper = styled.section`
   max-width: 500px;
   margin: 50px auto;
   padding: 16px;
+  margin-bottom: 100px;
 `;
 
 const Divider = styled.hr`
