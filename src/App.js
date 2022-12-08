@@ -53,8 +53,10 @@ function App() {
     setUser(obj.user);
   }
   function addBlog(blog) {
-    setBlogs((bs) => [...bs, blog]);
-    navigate("/");
+    setBlogs((bs) => {
+      navigate("/");
+      return [...bs, blog];
+    });
   }
 
   function handleClick(blog) {
