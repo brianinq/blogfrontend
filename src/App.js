@@ -3,7 +3,7 @@ import "./App.css";
 import Login from "./components/Login";
 import CreateArticle from "./components/CreateArticle";
 import { Route, Routes } from "react-router";
-import { redirect, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Nav from "./components/Nav";
 import styled from "styled-components";
 import Posts from "./components/Posts";
