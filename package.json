@@ -1,7 +1,7 @@
 {
   "name": "blogapp",
   "version": "0.1.0",
-  "proxy": "http://localhost:3000",
+  "proxy": "https://blogapp-production-49a6.up.railway.app",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
