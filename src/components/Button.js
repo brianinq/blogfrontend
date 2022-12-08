@@ -16,7 +16,7 @@ const ButtonBase = styled.button`
   font-size: 1rem;
   border: 1px solid transparent;
   border-radius: 20px;
-  padding: 8px 30px;
+  padding: 10px 30px;
   text-decoration: none;
 `;
 
@@ -25,7 +25,7 @@ const FillButton = styled(ButtonBase)`
   color: #ff3d00;
 
   &:hover {
-    opacity: 0.9;
+    box-shadow: 0 0 20px 5px #ff3d00;
   }
 `;
 
