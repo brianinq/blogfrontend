@@ -2,7 +2,7 @@
 
 An blog application crated using react and ruby on rails
 
-## [App Live Here](https://resilient-chebakia-ac8021.netlify.app)
+## [App Live Here](https://blogfrontend-blush.vercel.app/)
 
 ## [Backend Live Here](https://blogapp-production-49a6.up.railway.app/blogs)
 
