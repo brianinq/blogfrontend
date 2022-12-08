@@ -53,8 +53,8 @@ function App() {
     setUser(obj.user);
   }
   function addBlog(blog) {
-    redirect("/");
     setBlogs(blog);
+    navigate("/");
   }
 
   function handleClick(blog) {
