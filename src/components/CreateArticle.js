@@ -101,7 +101,7 @@ Or just type out the content text.
             </Select>
           </FormField>
           <FormField>
-            <Label htmlFor="body">Instructions</Label>
+            <Label htmlFor="body">Blog content (markdown accepted)</Label>
             <Textarea id="body" rows="10" value={body} onChange={(e) => setBody(e.target.value)} />
           </FormField>
           <FormField>
