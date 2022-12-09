@@ -1,6 +1,6 @@
 # WEWrite
 
-An blog application crated using react and ruby on rails
+A minimal blog application crated using react and ruby on rails, **features still being rolled out**
 
 ## [App Live Here](https://blogfrontend-blush.vercel.app/)
 
@@ -22,12 +22,13 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in the development.
 Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
-### `npm run server`
 
-Run this to set up the local db
+### `npm build`
+
+To get the production ready build
 
 ## Technologies used
 
@@ -36,4 +37,4 @@ Active Record, JWT, React-router
 
 ## Copyright and License
 
-Copyright 2022 Minido. Code released under the [MIT](https://github.com/brianinq/blogapp/main/LICENSE) license.
+Copyright 2022. Code released under the [MIT](https://github.com/brianinq/blogapp/main/LICENSE) license.
